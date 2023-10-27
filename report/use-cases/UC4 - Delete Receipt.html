@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>UC4 - Delete Receipt</title>
+</head>
+<body>
+    <div class="container">
+        <div class="name">UC4 - Delete Receipt</div>
+
+        <div class="data">
+            <i>Data:</i>
+            <ul>
+                <li>&lt;Receipt ID&gt;</li>
+                <li>&lt;Taxpayer TRN&gt;</li>
+            </ul>
+        </div>
+
+        <div class="primary-course">
+            <i>Main Flow:</i>
+            <ol>
+                <li>User of the system issues `Delete Receipt` command.</li>
+                <li>User is prompted to provide a receipt id to delete.</li>
+                <li>System deletes receipt with corresponding id from memory of the current taxpayer (using TRN).</li>
+                <li>System executes UC5.</li>
+            </ol>
+        </div>
+
+        <div class="exception-course">
+            <i>Invalid Receipt ID</i>
+            <ol>
+                <li>User has provided a receipt id that is invalid or one that does not exist in the list.</li>
+                <li>Use case ends.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
